@@ -43,7 +43,7 @@ class Ticket {
 
 class LTicket {
     private int num = 30;
-    private final ReentrantLock lock = new ReentrantLock();
+    private final ReentrantLock lock = new ReentrantLock(true);
 
     public void sale() {
         lock.lock();
